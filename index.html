@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Ansible tips 'n' tricks</title>
+
+  <link rel="stylesheet" href="assets/reveal.css">
+  <link rel="stylesheet" href="assets/black.css">
+  <link rel="stylesheet" href="assets/zenburn.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section data-markdown="intro.md"  data-separator="^------" data-separator-vertical="^---" data-separator-notes="^\*Info\*:"></section>
+      <section data-markdown="slides.md" data-separator="^------" data-separator-vertical="^---" data-separator-notes="^\*Info\*:"></section>
+      <section data-markdown="outro.md"  data-separator="^------" data-separator-vertical="^---" data-separator-notes="^\*Info\*:"></section>
+    </div>
+  </div>
+
+  <script src="assets/head.min.js"></script>
+  <script src="assets/reveal.js"></script>
+
+  <script>
+    Reveal.initialize({
+      history: true,
+      slideNumber: true,
+      dependencies: [
+      { src: 'assets/marked.js' },
+      { src: 'assets/markdown.js' },
+      { src: 'assets/notes.js', async: true },
+      { src: 'assets/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+      ]
+    });
+  </script>
+</body>
+</html>
